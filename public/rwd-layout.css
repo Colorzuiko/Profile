@@ -1,0 +1,57 @@
+body{background-color: #000}
+
+.banner {
+    color: #fff;
+    font-size: 24px;
+    display:flex;    
+}
+
+.user{
+    color: #fff;
+    font-size: 12;
+    text-align: right;
+}
+
+.list{
+    display:flex;
+    justify-content: right;
+}
+
+.product{
+    flex:none;width: 100px;margin:10px;
+    border: 2px solid #ffffff;
+    background-color: #000;
+    color: #fff;
+}
+
+.imgs img {
+    text-align: right;
+    width: 1250px;
+    height:auto
+}
+
+.bottom{
+    text-align: right;
+}
+
+.icon{
+    width:14px;
+    height:14px
+}
+
+@media (max-width:1250px) {
+        /*當螢幕寬度低於1250*/
+    .list{
+        flex-wrap: wrap; /*依照寬度換行*/
+    }
+    .product{
+        width:45%; 
+    }
+}
+
+@media (max-width:500px) {
+    /*當螢幕寬度低於500 套用該區CSS*/
+    .product{
+        width: 90%; 
+    }
+}
