@@ -1,34 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Colorzuiko</title>
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" /> 
-        <link rel="stylesheet" type="text/css" href="public/rwd-layout.css" />
-        <meta charset="utf-8"/>
-    </head>
-    <body>
-        <div class="banner">
-            Colorzuiko 
-        </div>
-       
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <div class="list">
-            <div class="product">Class</div>
-            <div class="product">Design</div>
-            <div class="product">Gellary</div>  
-            <div class="product">Porfile</div>          
-        </div>
-        <br/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 控制網頁縮放 版面寬度為裝置寬度，縮放比例為1x-->
 
-        <div class="imgs">
-            <img src="public/tengawa.png"/>
+    <title>ColorKoala</title>
+    <link rel="stylesheet" type="text/css" href="public/rwd-layout.css" />
+    <!-- 從外部引入CSS -->
+
+</head>
+<body>
+
+    <div class="banner">
+    <!-- display="flex" 在banner切板內水平排列 -->
+    <div class="outlink">
+        <img class="icon" src="public/fb_icon.png">
+        <img class="icon" src="public/yt_icon.png">
+        <img class="icon" src="public/ig_icon.png">
+        <img class="icon" src="public/tw_icon.png">
+    </div> 
+
+    <!-- 帶入ajax json替換語言; 靠右排列 -->
+    <div class="lang">
+        <botton onclick="eng();">ENG</botton>
+        <botton onclick="jpn();">日本語</botton>
+        <botton onclick="zh();">正體中文</botton>
+    </div>
+
+    </div>
+
+    <div class="profile">
+        <div class="logo">
+            <img src="public/owllogo.png">
+        </div>
+        <div class="name">
+            <img src="public/name.png">
+        </div>
+    </div>
+
+    <div class="subsite">
+        <div class="pageslift">
+            <div class="photo">
+                <img src="public/63480002.jpg">
+            </div>
+            <div class="text">
+                <h1>BLOG</h1>
+                <h3>圖文攝影創作</h3>
+                <p>Word Press</p>
+            </div>
         </div>
 
-        <br/>
-        <div class="bottom">
-            <img class="icon" src="public/fb_icon.png">
-            <img class="icon" src="public/yt_icon.png">
-            <img class="icon" src="public/ig_icon.png">
+        <div class="pagesright">
+            <div class="textr">
+                <h1>Class</h1>
+                <h3>攝影課程報名</h3>
+                <p>Based on:React, Node.js, MySQL</p>
+            </div>
+            
+            <div class="photor">
+                <img src="public/LEI06220.jpg">
+            </div>            
         </div>
-    </body>
+
+
+        <div class="pageslift">
+            <div class="photo">
+                <img src="public/LEI08720.jpg">
+            </div>
+            <div class="text">
+                <h1>Product</h1>
+                <h3>改造相機訂購</h3>
+                <p>Based on:Vue, Python Flask, MongoDB</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttom">
+        <div class="skill">
+            <h1>Skill</h1>
+            <p>Html, Css, JavaScript, Git, React, Vue,</p>
+            <p>Node.js, WebPack, WordPress,</p>
+            <p>Python Flask, MySQL, MongoDB.</p>
+        </div>
+
+    </div>
+
+</body>
 </html>
